@@ -1,0 +1,277 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.logotorneig
+{
+    height: 150px;
+}
+
+.cabecera
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh; /* Ajusta la altura según necesites */
+}
+
+.menunavegacio
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333; /* Cambia el color de fondo según tu diseño */
+    text-align: center; /* Centra el texto dentro del contenedor */
+}
+  
+.menunavegacio li
+{
+    display: inline-block; /* Muestra los elementos de la lista en línea y permite centrarlos */
+}
+  
+.menunavegacio li a
+{
+    display: block;
+    color: white; /* Cambia el color del texto según tu diseño */
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px; /* Tamaño de fuente aumentado */
+}
+  
+.menunavegacio li a:hover
+{
+    background-color: #555; /* Cambia el color de fondo al pasar el mouse */
+}
+
+.maincentrado
+{
+    display: flex;
+    flex-direction: column; /* Elementos uno debajo del otro */
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    height: 100vh; /* Esto asegura que el contenido esté centrado verticalmente en la pantalla */
+}
+
+#idiomas
+{
+    padding-left: 0;
+    list-style: none;
+}
+
+#idiomas a
+{
+    text-decoration: none;
+}
+
+#idiomas img
+{
+    width: 15px;
+    height: 15px;
+}
+
+#iconobottom
+{
+    width: 10px;
+    height: 5px;
+}
+
+.translate
+{
+    display: flex;
+    justify-content: end;
+    width: 95%;
+    margin: auto;
+}
+
+.translate img
+{
+    width: 15px;
+    height: 15px;
+}
+
+.idioma
+{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+    border: 1px solid rgb(219, 219, 219);
+    position: relative;
+}
+
+.idioma:hover
+{
+    background-color: rgb(228, 228, 228);
+}
+
+/* Lista de idiomas */
+
+.idiomas
+{
+    position: absolute;
+    top: 35px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 10px;
+    visibility: hidden;
+}
+
+.idiomas li
+{
+    width: 100%;
+}
+
+.idiomas li a
+{
+    display: block;
+    padding: 3px;
+    margin-top: 8px;
+    font-size: 10px;
+    color: rgb(85, 85, 85);
+}
+
+.idiomas li a:hover
+{
+    background-color: rgb(219, 219, 219);
+}
+
+.idiomas li img
+{
+    border-radius: 50%;
+}
+
+/* toogle - js */
+.toggle 
+{
+    visibility: visible;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[class*="col-"] {
+    float: left;
+}
+
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.col-0 {display:none;}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .col-xs-1 {width: 8.33%;}
+    .col-xs-2 {width: 16.66%;}
+    .col-xs-3 {width: 25%;}
+    .col-xs-4 {width: 33.33%;}
+    .col-xs-5 {width: 41.66%;}
+    .col-xs-6 {width: 50%;}
+    .col-xs-7 {width: 58.33%;}
+    .col-xs-8 {width: 66.66%;}
+    .col-xs-9 {width: 75%;}
+    .col-xs-10 {width: 83.33%;}
+    .col-xs-11 {width: 91.66%;}
+    .col-xs-12 {width: 100%;}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .col-sm-1 {width: 8.33%;}
+    .col-sm-2 {width: 16.66%;}
+    .col-sm-3 {width: 25%;}
+    .col-sm-4 {width: 33.33%;}
+    .col-sm-5 {width: 41.66%;}
+    .col-sm-6 {width: 50%;}
+    .col-sm-7 {width: 58.33%;}
+    .col-sm-8 {width: 66.66%;}
+    .col-sm-9 {width: 75%;}
+    .col-sm-10 {width: 83.33%;}
+    .col-sm-11 {width: 91.66%;}
+    .col-sm-12 {width: 100%;}
+}
+  
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .col-md-1 {width: 8.33%;}
+    .col-md-2 {width: 16.66%;}
+    .col-md-3 {width: 25%;}
+    .col-md-4 {width: 33.33%;}
+    .col-md-5 {width: 41.66%;}
+    .col-md-6 {width: 50%;}
+    .col-md-7 {width: 58.33%;}
+    .col-md-8 {width: 66.66%;}
+    .col-md-9 {width: 75%;}
+    .col-md-10 {width: 83.33%;}
+    .col-md-11 {width: 91.66%;}
+    .col-md-12 {width: 100%;}
+
+    
+}
+  
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .col-lg-0 {display:none;}
+    .col-lg-1 {width: 8.33%;}
+    .col-lg-2 {width: 16.66%;}
+    .col-lg-3 {width: 25%;}
+    .col-lg-4 {width: 33.33%;}
+    .col-lg-5 {width: 41.66%;}
+    .col-lg-6 {width: 50%;}
+    .col-lg-7 {width: 58.33%;}
+    .col-lg-8 {width: 66.66%;}
+    .col-lg-9 {width: 75%;}
+    .col-lg-10 {width: 83.33%;}
+    .col-lg-11 {width: 91.66%;}
+    .col-lg-12 {width: 100%;}
+}
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .col-xl-1 {width: 8.33%;}
+    .col-xl-2 {width: 16.66%;}
+    .col-xl-3 {width: 25%;}
+    .col-xl-4 {width: 33.33%;}
+    .col-xl-5 {width: 41.66%;}
+    .col-xl-6 {width: 50%;}
+    .col-xl-7 {width: 58.33%;}
+    .col-xl-8 {width: 66.66%;}
+    .col-xl-9 {width: 75%;}
+    .col-xl-10 {width: 83.33%;}
+    .col-xl-11 {width: 91.66%;}
+    .col-xl-12 {width: 100%;}
+}

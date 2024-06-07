@@ -1,0 +1,13 @@
+.ppavellons
+{
+    margin: 10px 0;
+}
+
+iframe
+{
+    border: none;
+    width: 100%;
+    max-width: 600px;
+    height: 70vh;
+    margin: 0 auto;
+}

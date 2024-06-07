@@ -1,0 +1,16 @@
+#mainindex
+{
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    height: 60vh; /* Ajusta la altura según lo necesites */
+}
+  
+#mainindex img
+{
+    max-width: 100%; /* Asegura que la imagen no supere el ancho del contenedor */
+    max-height: 100%; /* Asegura que la imagen no supere la altura del contenedor */
+    width: auto; /* Permite que la imagen se ajuste proporcionalmente */
+    height: auto; /* Permite que la imagen se ajuste proporcionalmente */
+    margin-top: 10vh;
+}
